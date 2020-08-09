@@ -1,0 +1,23 @@
+@font-face {
+	font-family: "Roboto";
+	src:
+		local("Roboto Regular"),
+		local("Roboto-Regular"),
+		url("/app/fonts/roboto-regular-webfont.woff2") format("woff2"),
+		url("/app/fonts/roboto-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Roboto Bold";
+	src:
+		local("Roboto Bold Light"),
+		local("Roboto-Bold-Light"),
+		url("/app/fonts/roboto-bold-webfont.woff2") format("woff2"),
+		url("/app/fonts/roboto-bold-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

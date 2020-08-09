@@ -1,0 +1,11 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Статьи';
+	- var currentNavItem = 'main'
+
+block content
+	+b.content.MAIN
+		include ../layouts/page-heading
+		include ../layouts/articles
+

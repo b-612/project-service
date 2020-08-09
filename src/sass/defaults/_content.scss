@@ -1,0 +1,35 @@
+.content {
+	padding-top: 75px;
+}
+
+.content p,
+.p,
+.content li,
+.li {
+	font-size: 1.6rem;
+	line-height: (19/16) * 1;
+}
+
+.content .text {
+	padding: 0 21.1rem;
+}
+
+.no-circle-list {
+	padding-left: 0;
+	list-style: none;
+}
+
+.visually-hidden {
+	position: absolute;
+
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+
+	padding: 0;
+	border: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+}

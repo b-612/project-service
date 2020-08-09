@@ -1,0 +1,7 @@
+mixin icon(name, view, width, height)
+	- mod = mod || ''
+	- view = view || ''
+	- width = width || ''
+	- height = height || ''
+	svg(class="icon icon-" + name, viewBox=view, width=width, height=height)
+		use(xlink:href="/app/icons/sprite.svg#" + name)

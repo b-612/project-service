@@ -1,0 +1,125 @@
+.header {
+	position: fixed;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 75px;
+	box-shadow: 0 -5px 25px 10px rgba(0, 0, 0, .1);
+	background-color: $white;
+
+	&__nav {
+		display: flex;
+		flex-grow: 1;
+	}
+
+	&__nav-list {
+		align-items: center;
+		flex-wrap: nowrap;
+		width: 100%;
+		margin-left: 24.6%;
+
+		@include min-screen($small_desktop) {
+			@include max-screen($largest_desktop) {
+				margin-left: 24%;
+			}
+		}
+	}
+
+	&__nav-item {
+		flex-shrink: 0;
+		margin-right: 3.78%;
+
+		&:nth-of-type(3n) {
+			margin-right: 37rem;
+		}
+	}
+
+	&__nav-link {
+		position: relative;
+		font-size: 1.8rem;
+
+		&_list {
+			&::after {
+				content: "";
+				position: absolute;
+				right: 2.3rem;
+				bottom: -1.4rem;
+				display: block;
+				width: 6px;
+				height: 6px;
+				border-right: 1px solid #b3b3b3;
+				border-bottom: 1px solid #b3b3b3;
+				transform: rotate(45deg);
+			}
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 3px;
+			left: 0;
+			z-index: -1;
+			width: 0;
+			height: 5px;
+			background-color: $orange;
+			transition: .3s ease;
+		}
+
+		&:hover,
+		&:focus {
+			&::before {
+				width: 100%;
+			}
+		}
+	}
+
+	&__logo {
+		position: absolute;
+		top: 50%;
+		left: 50.5%;
+		transform: translate(-50%, -50%);
+	}
+
+	&__call-wrap {
+		align-items: flex-end;
+		flex-direction: column;
+		justify-content: center;
+		padding-right: 7rem;
+	}
+
+	&__phone {
+		position: relative;
+		font-family: $roboto-bold;
+		font-size: 1.8rem;
+
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 3px;
+			left: 0;
+			z-index: -1;
+			width: 0;
+			height: 5px;
+			background-color: $orange;
+			transition: .3s ease;
+		}
+
+		&:hover,
+		&:focus {
+			&::before {
+				width: 100%;
+			}
+		}
+	}
+
+	&__recall {
+		font-size: 1.4rem;
+		transition: .2s ease;
+
+		&:hover,
+		&:focus {
+			color: $orange;
+		}
+	}
+}

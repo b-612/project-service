@@ -1,0 +1,95 @@
+-
+	var items = [
+		{
+			title: 'Режим работы в выходные&nbsp;и&#32;праздничные дни',
+			dateAttr: '2017-12-29',
+			dateText: '29.12.2017',
+			watches: '170501'
+		},
+		{
+			title: 'Монолитное строительство c гарантией под ключ',
+			dateAttr: '2017-12-29',
+			dateText: '29.12.2017',
+			watches: '170501'
+		},
+		{
+			title: 'Ищем подрядчиков',
+			dateAttr: '2017-12-29',
+			dateText: '29.12.2017',
+			watches: '170501'
+		},
+		{
+			title: 'Режим работы в выходные&nbsp;и&#32;праздничные дни',
+			dateAttr: '2017-12-29',
+			dateText: '29.12.2017',
+			watches: '170501'
+		},
+		{
+			title: 'Монолитное строительство c гарантией под ключ',
+			dateAttr: '2017-12-29',
+			dateText: '29.12.2017',
+			watches: '170501'
+		},
+		{
+			title: 'Ищем подрядчиков',
+			dateAttr: '2017-12-29',
+			dateText: '29.12.2017',
+			watches: '170501'
+		},
+		{
+			title: 'Монолитное строительство c гарантией под ключ',
+			dateAttr: '2017-12-29',
+			dateText: '29.12.2017',
+			watches: '170501'
+		},
+		{
+			title: 'Ищем подрядчиков',
+			dateAttr: '2017-12-29',
+			dateText: '29.12.2017',
+			watches: '170501'
+		},
+		{
+			title: 'Режим работы в выходные&nbsp;и&#32;праздничные дни',
+			dateAttr: '2017-12-29',
+			dateText: '29.12.2017',
+			watches: '170501'
+		},
+		{
+			title: 'Режим работы в выходные&nbsp;и&#32;праздничные дни',
+			dateAttr: '2017-12-29',
+			dateText: '29.12.2017',
+			watches: '170501'
+		},
+		{
+			title: 'Монолитное строительство c гарантией под ключ',
+			dateAttr: '2017-12-29',
+			dateText: '29.12.2017',
+			watches: '170501'
+		},
+		{
+			title: 'Ищем подрядчиков',
+			dateAttr: '2017-12-29',
+			dateText: '29.12.2017',
+			watches: '170501'
+		},
+	];
+-
+
++b.articles.SECTION
+	H2.visually-hidden Статьи за выбрынный период
+
+	+e.wrap.wrap
+		+e.list.no-circle-list.flex.UL
+			each item in items
+				+e.item.flex.LI
+					+e.link.flex.A(href="#")
+						+e.title.H3 !{item.title}
+						+e.bottom.flex
+							+e.date.TIME(datetime=item.dataAttribute)
+								+icon('calendar', '0 0 4 4', '17', '17')
+								| !{item.dateText}
+							+e.watches
+								+icon('eye', '0 0 4 2', '17', '9')
+								| !{item.watches}
+							+icon('arrow', '0 0 36.5 8.5', '36', '8')
+		include pagination

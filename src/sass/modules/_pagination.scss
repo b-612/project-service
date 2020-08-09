@@ -1,0 +1,23 @@
+.pagination {
+	&__item {
+		margin-right: 1.5rem;
+	}
+
+	&__link {
+		display: block;
+		width: 3rem;
+		height: 3rem;
+		padding: .5rem;
+		border-radius: 50%;
+		font-family: $roboto-bold;
+		font-size: 1.8rem;
+		text-align: center;
+		transition: .2s ease;
+
+		&:hover,
+		&:focus {
+			color: $white;
+			background-color: $dark;
+		}
+	}
+}
