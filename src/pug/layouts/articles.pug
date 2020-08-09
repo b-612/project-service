@@ -85,9 +85,10 @@
 					+e.link.flex.A(href="#")
 						+e.title.H3 !{item.title}
 						+e.bottom.flex
-							+e.date.TIME(datetime=item.dataAttribute)
+							+e.time-wrap
 								+icon('calendar', '0 0 4 4', '17', '17')
-								| !{item.dateText}
+								+e.date.TIME(datetime=item.dateAttr)
+									| !{item.dateText}
 							+e.watches
 								+icon('eye', '0 0 4 2', '17', '9')
 								| !{item.watches}

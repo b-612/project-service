@@ -96,7 +96,7 @@
 		}
 	}
 
-	&__date,
+	&__time-wrap,
 	&__watches {
 		svg {
 			position: absolute;
@@ -105,6 +105,10 @@
 			width: 1.7rem;
 			transform: translateY(-50%);
 		}
+	}
+
+	&__time-wrap {
+		position: relative;
 	}
 
 	&__date {
